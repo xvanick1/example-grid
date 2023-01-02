@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Antti's Web grid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+
+    object {
+      width: 50%;
+      height: 50%;
+      float: left;
+    }
+
+    object:nth-of-type(1) {
+      background: #ccc;
+    }
+
+    object:nth-of-type(2) {
+      background: #bbb;
+      border-left: 1px solid #1b4c91;
+    }
+
+    object:nth-of-type(3) {
+      background: #aaa;
+      border-top: 1px solid #1b4c91;
+    }
+
+    object:nth-of-type(4) {
+      background: #ddd;
+      border-top: 1px solid #1b4c91;
+      border-left: 1px solid #1b4c91;
+    }
+  </style>
+  <body>
+    <object data="http://example.com" type="text/html"></object>
+    <object data="http://example.com" type="text/html"></object>
+    <object data="http://example.com" type="text/html"></object>
+    <object data="http://example.com" type="text/html"></object>
+  </body>
+</html>
